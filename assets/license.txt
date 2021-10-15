@@ -1,0 +1,11 @@
+Model Information:
+* title:	DAY16: FANTASY
+* source:	https://sketchfab.com/3d-models/day16-fantasy-e79d50d401fc49789a3d6447fb9bb982
+* author:	binrong (https://sketchfab.com/binrong)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "DAY16: FANTASY" (https://sketchfab.com/3d-models/day16-fantasy-e79d50d401fc49789a3d6447fb9bb982) by binrong (https://sketchfab.com/binrong) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

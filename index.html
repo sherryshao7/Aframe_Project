@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aframe Project</title>
+        <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+        <script src="https://unpkg.com/aframe-particle-system-component@1.0.9/dist/aframe-particle-system-component.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+
+            <!-- assets arrangement -->
+            <a-assets>
+                <img id="bg" src="assets/background.jpg">
+                <!-- Gltf Model:no face -->
+                <a-asset-item id="noFace" src="assets/scene.gltf"></a-asset-item>
+            </a-assets>
+
+            <!-- Background -->
+            <a-sky src="#bg"></a-sky>
+
+            <!-- Camera -->
+            <a-entity position="30 5 -25"><a-camera></a-camera></a-entity>
+
+            <!-- Rotating No Face -->
+            <a-entity gltf-model="#noFace" 
+                      position="30 10 -60"
+                      scale="0.3 0.3 0.3"              
+                      animation="property: rotation;
+                                 to: 0 360 0;
+                                 loop: true;
+                                 dur: 3000;
+                                 easing: linear">
+            </a-entity>
+            <a-sphere position="30 5 -60" radius="3" color="#ff94c9"></a-sphere>
+            
+            <!--
+            Red directional light.
+            <a-light color="red" position="-12 10 7"></a-light>
+
+            Blue point light, 5 meters in the air.
+            <a-light type="point" color="blue" position="0 5 0"></a-light>
+
+            Dim ambient lighting.
+            <a-light type="ambient" color="#222"></a-light>
+            -->
+
+            <!-- Sparkler -->
+            <a-entity position="15 15 -50" particle-system="color: #EF0000,#44CC00"></a-entity>
+
+            <!-- Snow -->
+            <a-entity position="15 10 0" particle-system="preset: snow"></a-entity>
+        </a-scene>
+    </body>
+</html>
